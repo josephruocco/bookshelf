@@ -1,0 +1,109 @@
+---
+title: WoodWork for Calibre
+permalink: /calibre/
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reshuffle any Calibre library into a random shortlist, then put a rotating shelf on your iPhone Home Screen.">
+    <title>WoodWork for Calibre</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link href="/assets/css/books-unified.css" rel="stylesheet">
+    <style>
+      .calibre-page { max-width: 68rem; margin: 0 auto; padding: clamp(3.5rem, 8vw, 7rem) 1.5rem 5rem; color: #211a14; }
+      .calibre-hero { max-width: 54rem; }
+      .calibre-kicker { margin: 0 0 1rem; color: #756044; font: 700 .76rem/1.2 "Avenir Next", sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+      .calibre-hero h1 { max-width: 13ch; margin: 0; font: 400 clamp(3.2rem, 8vw, 7rem)/.9 Georgia, serif; letter-spacing: -.055em; }
+      .calibre-lede { max-width: 43rem; margin: 1.7rem 0 2.2rem; color: #62584f; font: 500 clamp(1.08rem, 2vw, 1.4rem)/1.55 "Avenir Next", sans-serif; }
+      .calibre-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+      .calibre-button { display: inline-grid; gap: .15rem; padding: .85rem 1.25rem; border-radius: 10px; background: #211a14; color: #fffaf2; font: 650 .95rem/1.2 "Avenir Next", sans-serif; text-decoration: none; }
+      .calibre-button.secondary { background: #9a7952; }
+      .calibre-button span { font-size: .72rem; font-weight: 400; opacity: .72; }
+      .calibre-note { margin-top: .85rem; color: #7a7065; font: .8rem/1.5 "Avenir Next", sans-serif; }
+      .calibre-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: clamp(4rem, 9vw, 8rem); border: 1px solid #ded6cb; background: #ded6cb; }
+      .calibre-grid article { padding: 2rem; background: #faf7f1; }
+      .calibre-grid span { color: #9a7952; font: 700 .72rem/1 sans-serif; letter-spacing: .12em; }
+      .calibre-grid h2 { margin: 2rem 0 .7rem; font: 400 1.55rem/1.15 Georgia, serif; }
+      .calibre-grid p, .calibre-steps li { color: #675d53; font: .95rem/1.6 "Avenir Next", sans-serif; }
+      .calibre-section { max-width: 48rem; margin-top: clamp(4rem, 9vw, 7rem); }
+      .calibre-section h2 { margin: 0 0 1.2rem; font: 400 clamp(2rem, 4vw, 3.3rem)/1 Georgia, serif; letter-spacing: -.035em; }
+      .calibre-steps { margin: 0; padding-left: 1.25rem; }
+      .calibre-steps li { padding: .35rem 0 .8rem .35rem; }
+      .calibre-trust { margin-top: 3rem; padding: 1.3rem 1.45rem; border-radius: 14px; background: #eee8df; color: #51483e; font: .9rem/1.6 "Avenir Next", sans-serif; }
+      .calibre-footer { display: flex; gap: 1rem; margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid rgba(33,26,20,.1); font: .82rem/1.4 "Avenir Next", sans-serif; }
+      .calibre-footer a { color: #756044; }
+      @media (max-width: 720px) { .calibre-grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body class="books-page">
+    <div class="books-page">
+      <header class="books-masthead">
+        <div class="books-masthead-inner">
+          <a class="books-site-title" href="/">WoodWork</a>
+          <nav class="books-nav" aria-label="Primary">
+            <a href="/ios/">iOS</a>
+            <a href="/calibre/" class="active">Calibre</a>
+            <a href="/support/">Support</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="calibre-page">
+        <section class="calibre-hero">
+          <p class="calibre-kicker">WoodWork for Calibre</p>
+          <h1>A fresh shelf from the books you already own.</h1>
+          <p class="calibre-lede">Reshuffle your entire Calibre library—or any search or Virtual Library—into a browsable shortlist. Then connect WoodWork for iPhone to keep rediscovering it on your Home Screen.</p>
+          <div class="calibre-actions">
+            <a class="calibre-button" href="/assets/downloads/WoodWorkShelf.zip" download>
+              Download the Calibre plugin
+              <span>Free beta · Calibre 7+</span>
+            </a>
+            <a class="calibre-button secondary" href="https://testflight.apple.com/join/kwQRXSR3">
+              Get WoodWork for iPhone
+              <span>Available on TestFlight</span>
+            </a>
+          </div>
+          <p class="calibre-note">The plugin works on its own. The iPhone app is optional.</p>
+        </section>
+
+        <section class="calibre-grid" aria-label="How WoodWork works with Calibre">
+          <article><span>01</span><h2>Filter</h2><p>Start with the whole library, a search, or a Virtual Library such as unread fiction.</p></article>
+          <article><span>02</span><h2>Reshuffle</h2><p>Surface a random shortlist of 24, 36, 60, or 90 books without changing metadata or files.</p></article>
+          <article><span>03</span><h2>Take it with you</h2><p>Connect the iPhone app to Calibre’s Content Server and display a rotating shelf as a widget.</p></article>
+        </section>
+
+        <section class="calibre-section">
+          <h2>Install the plugin</h2>
+          <ol class="calibre-steps">
+            <li>Download <strong>WoodWorkShelf.zip</strong> above.</li>
+            <li>In Calibre, open <strong>Preferences → Plugins → Load plugin from file</strong>.</li>
+            <li>Select the ZIP, restart Calibre, then add <strong>Reshuffle Shelf</strong> under <strong>Preferences → Toolbars &amp; menus</strong>.</li>
+            <li>Use its menu to change shelf size or restore the view you had before.</li>
+          </ol>
+        </section>
+
+        <section class="calibre-section">
+          <h2>Connect your iPhone</h2>
+          <ol class="calibre-steps">
+            <li>In Calibre, choose <strong>Connect/share → Start Content Server</strong>.</li>
+            <li>Keep the computer and iPhone on the same Wi-Fi network.</li>
+            <li>In WoodWork, open <strong>Calibre Content Server</strong> and select the nearby server. Manual address entry remains available.</li>
+            <li>Test the connection, choose a library if needed, and sync.</li>
+          </ol>
+        </section>
+
+        <p class="calibre-trust"><strong>Local-first by design.</strong> The plugin contains no analytics and never changes Calibre metadata or ebook files. The iPhone app copies book metadata for the widget—not the ebook files themselves. For ordinary setup, keep the Content Server on your home network rather than exposing it to the internet.</p>
+
+        <footer class="calibre-footer">
+          <a href="/support/">Support</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://github.com/josephruocco/woodwork">Source</a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

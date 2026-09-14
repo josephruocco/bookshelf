@@ -37,6 +37,7 @@ permalink: /privacy/
           <a class="books-site-title" href="/">WoodWork</a>
           <nav class="books-nav" aria-label="Primary">
             <a href="/ios/">iOS</a>
+            <a href="/calibre/">Calibre</a>
             <a href="/support/">Support</a>
           </nav>
         </div>
@@ -44,17 +45,22 @@ permalink: /privacy/
 
       <main class="privacy-page">
         <h1>Privacy Policy</h1>
-        <p class="privacy-date">WoodWork for iPhone and WoodWork Scanner for Mac &middot; Last updated 3 September 2026</p>
+        <p class="privacy-date">WoodWork for iPhone and WoodWork Scanner for Mac &middot; Last updated 13 September 2026</p>
 
         <p class="privacy-lede">WoodWork collects nothing. There is no account, no
         analytics, no advertising, no tracking, and no server operated by us. Your
         library never reaches anyone but you.</p>
 
         <h2>The iPhone app and widget</h2>
-        <p>The iPhone app and its home screen widget make no network requests of any
-        kind. They read two things: the shelf your Mac published to your own iCloud
-        account, and the display settings you choose in the app. Both stay on your
-        device and in your personal iCloud storage, which only you can access.</p>
+        <p>The iPhone app can connect directly to a Calibre Content Server address
+        that you select or enter. WoodWork requests book titles, authors, identifiers,
+        page metadata, and file sizes from that server to build the shelf; it does not
+        upload your library to us. A Calibre password is stored in the iOS Keychain
+        and is not copied into widget data.</p>
+        <p>The app can alternatively read a shelf your Mac published to your own
+        iCloud account or a library file you choose. Imported shelf data and display
+        settings stay on your devices and, when scanner sync is enabled, in your
+        personal iCloud storage.</p>
 
         <h2>The Mac scanner</h2>
         <p>The scanner reads the Apple Books and Kindle databases already on your Mac,
@@ -71,7 +77,7 @@ permalink: /privacy/
         anywhere else.</p>
 
         <h2>The website</h2>
-        <p>The browser bookshelf at bookshelf.josephruocco.net runs entirely in your
+        <p>The browser bookshelf at getwoodwork.app runs entirely in your
         browser. Books you add are stored in your browser's local storage and are never
         transmitted. Opening a public domain book fetches its text from Project
         Gutenberg through a text-extraction proxy; those services see the request for
