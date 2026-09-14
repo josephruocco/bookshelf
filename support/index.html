@@ -1,0 +1,130 @@
+---
+title: WoodWork Support
+permalink: /support/
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Help with WoodWork for iPhone, its bookshelf widget, Calibre, and library imports.">
+    <title>WoodWork Support</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link href="/assets/css/books-unified.css" rel="stylesheet">
+    <style>
+      .support-page { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+      .support-kicker {
+        margin: 0 0 .8rem;
+        color: #756044;
+        font: 700 .76rem/1.2 "Avenir Next", "Helvetica Neue", sans-serif;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+      }
+      .support-page h1 { max-width: 12ch; margin: 0; font: 400 clamp(3rem, 8vw, 5.5rem)/.92 Georgia, serif; letter-spacing: -.05em; }
+      .support-lede { max-width: 38rem; margin: 1.5rem 0 2.5rem; color: #62584f; font: 500 1.12rem/1.55 "Avenir Next", sans-serif; }
+      .support-contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        padding: 1.25rem 1.4rem;
+        border-radius: 16px;
+        background: #211a14;
+        color: #f7f1e6;
+      }
+      .support-contact p { margin: 0; color: #cfc4b4; font: .9rem/1.45 "Avenir Next", sans-serif; }
+      .support-contact a {
+        flex: 0 0 auto;
+        padding: .68rem 1rem;
+        border-radius: 9px;
+        background: #f7f1e6;
+        color: #211a14;
+        font: 650 .88rem/1 "Avenir Next", sans-serif;
+        text-decoration: none;
+      }
+      .support-list { border-top: 1px solid rgba(33, 26, 20, .13); }
+      .support-item { padding: 1.5rem 0; border-bottom: 1px solid rgba(33, 26, 20, .13); }
+      .support-item h2 { margin: 0 0 .55rem; font: 400 1.35rem/1.2 Georgia, serif; }
+      .support-item p, .support-item li { color: #51483e; font: .95rem/1.65 "Avenir Next", sans-serif; }
+      .support-item p { margin: 0; }
+      .support-item ol { margin: .5rem 0 0; padding-left: 1.25rem; }
+      .support-links { display: flex; gap: 1rem; margin-top: 2rem; font: .85rem/1.4 "Avenir Next", sans-serif; }
+      .support-links a { color: #756044; }
+      @media (max-width: 620px) {
+        .support-contact { align-items: flex-start; flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body class="books-page">
+    <div class="books-page">
+      <header class="books-masthead">
+        <div class="books-masthead-inner">
+          <a class="books-site-title" href="/">WoodWork</a>
+          <nav class="books-nav" aria-label="Primary">
+            <a href="/ios/">iOS</a>
+            <a href="/support/" class="active">Support</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="support-page">
+        <p class="support-kicker">WoodWork support</p>
+        <h1>Let’s get your shelf working.</h1>
+        <p class="support-lede">Help with the iPhone app, home-screen widget, Calibre connection, and library imports.</p>
+
+        <section class="support-contact" aria-label="Contact support">
+          <p>Still stuck? Email the developer directly.</p>
+          <a href="mailto:ruoccoj19@gmail.com?subject=WoodWork%20Support">Email support</a>
+        </section>
+
+        <div class="support-list">
+          <section class="support-item">
+            <h2>How do I add the widget?</h2>
+            <ol>
+              <li>Touch and hold an empty area of your iPhone Home Screen.</li>
+              <li>Tap Edit, then Add Widget.</li>
+              <li>Search for WoodWork, choose a size, and tap Add Widget.</li>
+            </ol>
+          </section>
+
+          <section class="support-item">
+            <h2>How do I import my library?</h2>
+            <p>Use whichever option fits your setup: connect to a running Calibre Content Server, sync from WoodWork Scanner for Mac through iCloud, or choose Import a Library File in the iPhone app.</p>
+          </section>
+
+          <section class="support-item">
+            <h2>How do I connect Calibre?</h2>
+            <ol>
+              <li>In Calibre, choose Connect/share, then Start Content Server.</li>
+              <li>Keep your computer and iPhone on the same Wi-Fi network.</li>
+              <li>In WoodWork, open Calibre Content Server and enter the address shown by Calibre.</li>
+            </ol>
+          </section>
+
+          <section class="support-item">
+            <h2>Why has the widget not updated?</h2>
+            <p>Open WoodWork once after importing or syncing a library. If the widget still looks stale, remove it from the Home Screen and add it again. iOS ultimately controls when widgets refresh.</p>
+          </section>
+
+          <section class="support-item">
+            <h2>Why are some spines thicker?</h2>
+            <p>Spine thickness represents page count. When an exact count is unavailable, WoodWork uses an estimate so every book can still appear on the shelf.</p>
+          </section>
+
+          <section class="support-item">
+            <h2>Does WoodWork collect my library?</h2>
+            <p>No. Your library is stored on your devices and, if you enable scanner sync, in your personal iCloud container. WoodWork has no accounts, advertising, or analytics.</p>
+          </section>
+        </div>
+
+        <nav class="support-links" aria-label="Support links">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/ios/">WoodWork for iPhone</a>
+        </nav>
+      </main>
+    </div>
+  </body>
+</html>
