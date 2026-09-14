@@ -43,6 +43,10 @@ permalink: /
             <button type="button" class="shelf-shuffle" id="open-random-book">Open a random book</button>
           </div>
           <a class="mobile-ios-link" href="https://testflight.apple.com/join/kwQRXSR3">Download for iOS</a>
+          <div class="calibre-plugin-download">
+            <a href="/assets/downloads/WoodWorkShelf.zip" download>Download the Calibre plugin</a>
+            <span>Calibre 9+</span>
+          </div>
         </div>
       </section>
 
@@ -603,6 +607,15 @@ permalink: /
   .shelf-shuffle:hover { background: rgba(0,0,0,.06); }
   .shelf-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1rem; }
   .mobile-ios-link { display: none; }
+  .calibre-plugin-download {
+    display: flex;
+    align-items: baseline;
+    gap: .55rem;
+    margin-top: .85rem;
+    font-size: .9rem;
+  }
+  .calibre-plugin-download a { color: inherit; text-decoration: underline; }
+  .calibre-plugin-download span { opacity: .62; font-size: .8rem; }
   .shelf-caption { font-size: .9em; line-height: 1.4; }
   .shelf-caption a { text-decoration: underline; }
 
