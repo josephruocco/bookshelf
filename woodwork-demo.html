@@ -35,29 +35,36 @@ permalink: /
         </div>
       </header>
 
-      <!-- Title card -->
-      <section class="books-title-card" aria-labelledby="shelf-page-title">
-        <div class="books-title-card-inner">
-          <h1 id="shelf-page-title">WoodWork</h1>
-          <p>A bookshelf to maximize serendipity.<span class="desktop-shelf-instructions"> Drag to reorder, click to reshuffle.</span></p>
-          <div class="shelf-actions">
-            <button type="button" class="shelf-shuffle" id="shuffle">Shuffle</button>
-            <button type="button" class="shelf-shuffle" id="open-random-book">Open a random book</button>
-          </div>
-          <a class="mobile-ios-link" href="https://testflight.apple.com/join/kwQRXSR3">Download for iOS</a>
-          <div class="calibre-plugin-download">
-            <a href="/assets/downloads/WoodWorkShelf.zip" download>Download the Calibre plugin</a>
-            <span>Calibre 9+</span>
-          </div>
-        </div>
-      </section>
+      <main class="demo-home" id="main-content">
+        <div class="demo-home-grid">
+          <div class="demo-home-primary">
+            <section class="demo-hero" aria-labelledby="shelf-page-title">
+              <p class="demo-kicker">WoodWork for iPhone</p>
+              <h1 id="shelf-page-title">Pull forgotten books out of the woodwork.</h1>
+              <p class="demo-lede">Turn your Calibre, Apple Books, or Kindle library into a living bookshelf widget that quietly reshuffles throughout the day.</p>
+              <div class="demo-hero-links">
+                <a class="demo-primary-link" href="/ios/">Get WoodWork for iPhone</a>
+                <a class="demo-secondary-link" href="/calibre/">Set up Calibre</a>
+              </div>
+            </section>
 
-      <main class="books-content" id="main-content">
-        <div class="shelf-page">
-          <section class="demo-builder" aria-labelledby="demo-builder-title">
+            <section class="shelf-page" aria-labelledby="demo-builder-title">
+              <header class="demo-live-header">
+                <div>
+                  <p class="demo-kicker">Try the shelf</p>
+                  <h2 id="demo-builder-title">Build your own WoodWork shelf.</h2>
+                  <p>Add a title, change the mood, then open any book from the shelf.</p>
+                </div>
+                <div class="shelf-actions">
+                  <button type="button" class="shelf-shuffle" id="shuffle">Shuffle</button>
+                  <button type="button" class="shelf-shuffle" id="open-random-book">Open a random book</button>
+                </div>
+              </header>
+
+              <section class="demo-builder" aria-label="Add a book to the demo shelf">
             <form class="demo-builder-form" id="add-book-form">
               <div class="demo-field">
-                <label for="book-query-input" id="demo-builder-title">Add by Title or Author</label>
+                <label for="book-query-input">Add by Title or Author</label>
                 <input id="book-query-input" name="query" type="text" placeholder="" autocomplete="off" aria-autocomplete="list" aria-controls="book-suggestions" aria-expanded="false" required>
                 <div class="demo-suggestions" id="book-suggestions" role="listbox" hidden></div>
               </div>
@@ -75,6 +82,7 @@ permalink: /
                 <p class="demo-match-message" id="resolved-book-message"></p>
               </div>
             </article>
+              </section>
 
           <div class="shelf-themes" id="themes" role="group" aria-label="Shelf style">
             <button type="button" data-theme="classic" class="is-on">Classic</button>
@@ -100,6 +108,25 @@ permalink: /
               <div class="shelf-list" id="demo-books-list"></div>
             </section>
           </section>
+              <div class="calibre-plugin-download">
+                <a href="/assets/downloads/WoodWorkShelf.zip" download>Download the Calibre plugin</a>
+                <span>Calibre 9+</span>
+              </div>
+            </section>
+          </div>
+
+          <aside class="app-screens" aria-label="WoodWork on iPhone">
+            <div class="app-screen app-screen-main">
+              <img src="/assets/images/woodwork/app-library.jpg" alt="WoodWork app showing a white built-in bookshelf" width="720" height="1565">
+            </div>
+            <div class="app-screen app-screen-widget app-screen-widget-one">
+              <img src="/assets/images/woodwork/app-widget-artsy.jpg" alt="WoodWork Artsy shelf widget on an iPhone Home Screen" width="720" height="1565" loading="lazy">
+            </div>
+            <div class="app-screen app-screen-widget app-screen-widget-two">
+              <img src="/assets/images/woodwork/app-widget-oak.jpg" alt="WoodWork Dark Oak shelf widget on an iPhone Home Screen" width="720" height="1565" loading="lazy">
+            </div>
+            <a class="app-screens-link" href="/ios/">See WoodWork for iPhone <span aria-hidden="true">&rarr;</span></a>
+          </aside>
         </div>
       </main>
 
@@ -938,6 +965,215 @@ permalink: /
     .demo-reader-text { font-size: 1.04rem; line-height: 1.72; }
     .demo-reader-text > .book-opening { margin-bottom: 3rem; }
     .demo-reader-text .book-opening h1 { font-size: clamp(2.7rem, 14vw, 4.5rem); }
+  }
+
+  /* Homepage composition: iOS story, live shelf, and the app in use. */
+  body.books-page {
+    background: #faf7f1;
+    color: #62584f;
+  }
+  .demo-home {
+    width: min(100%, 1440px);
+    margin: 0 auto;
+    padding: clamp(3.5rem, 7vw, 7.5rem) clamp(1.5rem, 5vw, 5rem) 7rem;
+  }
+  .demo-home-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(300px, .72fr);
+    gap: clamp(3rem, 6vw, 7rem);
+    align-items: start;
+  }
+  .demo-home-primary { min-width: 0; }
+  .demo-hero { padding-bottom: clamp(3.5rem, 7vw, 6.5rem); }
+  .demo-kicker {
+    margin: 0 0 1rem;
+    color: #756044;
+    font: 700 .76rem/1.2 "Avenir Next", "Helvetica Neue", sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .demo-hero h1 {
+    max-width: 11ch;
+    margin: 0;
+    color: #211a14;
+    font: 400 clamp(4rem, 7.6vw, 7.4rem)/.89 var(--woodwork-serif);
+    letter-spacing: -.062em;
+  }
+  .demo-lede {
+    max-width: 660px;
+    margin: 2rem 0 0;
+    color: #62584f;
+    font: 500 clamp(1.08rem, 1.8vw, 1.4rem)/1.5 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .demo-hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 2rem;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .demo-primary-link,
+  .demo-secondary-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: .75rem 1.15rem;
+    border: 1px solid #211a14;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform .15s ease, background .15s ease, color .15s ease;
+  }
+  .demo-primary-link { color: #fffaf2; background: #211a14; }
+  .demo-secondary-link { color: #211a14; background: transparent; }
+  .demo-primary-link:hover,
+  .demo-secondary-link:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .demo-secondary-link:hover { color: #fffaf2; background: #211a14; }
+  .shelf-page {
+    margin: 0 0 3rem;
+    padding-top: clamp(2rem, 4vw, 3.5rem);
+    border-top: 1px solid rgba(33, 26, 20, .14);
+  }
+  .demo-live-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2rem;
+    align-items: end;
+    margin-bottom: 2rem;
+  }
+  .demo-live-header h2 {
+    max-width: 14ch;
+    margin: 0;
+    color: #211a14;
+    font: 400 clamp(2.5rem, 5vw, 4.7rem)/.94 var(--woodwork-serif);
+    letter-spacing: -.05em;
+  }
+  .demo-live-header > div > p:last-child {
+    max-width: 40rem;
+    margin: 1rem 0 0;
+    font: 500 1rem/1.5 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .demo-live-header .shelf-actions {
+    justify-content: flex-end;
+    margin: 0;
+  }
+  .demo-live-header .shelf-shuffle {
+    min-height: 42px;
+    padding: .65rem .95rem;
+    border-color: rgba(33, 26, 20, .32);
+    border-radius: 999px;
+    color: #211a14;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .demo-builder { margin-bottom: 1.1rem; }
+  .shelf-themes { margin: 0 0 1rem; }
+  .shelf-themes button {
+    padding: .5rem .9rem;
+    border-color: rgba(33, 26, 20, .22);
+    color: #4e443b;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .shelf-themes button.is-on { background: #211a14; border-color: #211a14; }
+  .shelf-case { box-shadow: 0 22px 55px rgba(38, 25, 14, .18); }
+  .calibre-plugin-download {
+    margin-top: 1.3rem;
+    color: #5c5046;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .app-screens {
+    position: sticky;
+    top: 7rem;
+    min-height: 940px;
+  }
+  .app-screen {
+    overflow: hidden;
+    border: 1px solid rgba(33, 26, 20, .12);
+    border-radius: 30px;
+    background: #f4ede3;
+    box-shadow: 0 28px 70px rgba(40, 27, 18, .2);
+  }
+  .app-screen img { width: 100%; height: auto; }
+  .app-screen-main {
+    position: relative;
+    z-index: 3;
+    width: min(100%, 340px);
+    margin-left: auto;
+  }
+  .app-screen-widget {
+    position: absolute;
+    z-index: 1;
+    width: 210px;
+    border-radius: 24px;
+    box-shadow: 0 20px 45px rgba(40, 27, 18, .16);
+  }
+  .app-screen-widget-one {
+    top: 470px;
+    left: -25px;
+    transform: rotate(-5deg);
+  }
+  .app-screen-widget-two {
+    top: 530px;
+    right: -35px;
+    transform: rotate(5deg);
+  }
+  .app-screens-link {
+    position: absolute;
+    top: 900px;
+    right: 0;
+    color: #4f4339;
+    font: 600 .88rem/1.2 "Avenir Next", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+  }
+  .app-screens-link:hover { color: #8f3429; }
+
+  @media (max-width: 1080px) {
+    .demo-home-grid { grid-template-columns: 1fr; }
+    .app-screens {
+      position: static;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      min-height: 0;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(33, 26, 20, .14);
+    }
+    .app-screen-main,
+    .app-screen-widget {
+      position: static;
+      width: auto;
+      margin: 0;
+      transform: none;
+    }
+    .app-screen-widget { border-radius: 30px; }
+    .app-screens-link {
+      position: static;
+      grid-column: 1 / -1;
+      justify-self: end;
+      margin-top: .35rem;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .demo-home { padding: 3rem 1.25rem 5rem; }
+    .demo-hero { padding-bottom: 3.25rem; }
+    .demo-hero h1 { font-size: clamp(3.6rem, 16vw, 5.4rem); }
+    .demo-live-header { grid-template-columns: 1fr; gap: 1.25rem; }
+    .demo-live-header .shelf-actions { justify-content: flex-start; }
+    .demo-live-header .shelf-shuffle { flex: 1 1 130px; }
+    .app-screens {
+      grid-template-columns: repeat(3, 74vw);
+      justify-content: start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
+    }
+    .app-screen { scroll-snap-align: center; border-radius: 24px; }
+    .app-screens-link { grid-column: auto; align-self: end; padding: 1rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
