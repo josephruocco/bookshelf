@@ -1,0 +1,8 @@
+# The site moved to getwoodwork.app. Send the old domain there permanently so
+# links in the wild, search engines, and the App Store listing all land in one
+# place instead of splitting across two hosts serving the same pages.
+[[redirects]]
+  from = "https://bookshelf.josephruocco.net/*"
+  to = "https://getwoodwork.app/:splat"
+  status = 301
+  force = true
