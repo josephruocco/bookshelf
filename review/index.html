@@ -16,7 +16,9 @@ sitemap: false
       .review-page { max-width: 40rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; color: #211a14; }
       .review-page h1 { margin: 0 0 .4rem; font-size: 1.9rem; line-height: 1.15; }
       .review-page .review-sub { margin: 0 0 2rem; color: #6f6559; font-size: .9rem; }
-      .review-page h2 { margin: 2.2rem 0 .6rem; font-size: 1.05rem; }
+      .review-page h2 { margin: 2.6rem 0 .6rem; font-size: 1.15rem; }
+      .review-page h3 { margin: 1.6rem 0 .4rem; font-size: .95rem; }
+      .review-videos video { display: block; width: 100%; margin: .6rem 0 1.4rem; border-radius: 10px; background: #211a14; }
       .review-page p, .review-page li { color: #3f382f; font-size: .95rem; line-height: 1.6; }
       .review-page ol { padding-left: 1.3rem; }
       .review-page li { margin-bottom: .55rem; }
@@ -47,22 +49,43 @@ sitemap: false
 
         <p>On a fresh install WoodWork shows a public domain shelf so the widget is
         never empty. The app's actual purpose is to show <em>the user's own</em>
-        library. This page provides a sample library so that flow can be reviewed
-        on an iPhone alone.</p>
+        library. The recordings below show that flow end to end on a real library,
+        and the sample file further down lets it be reproduced on an iPhone alone.</p>
 
-        <h2>1. Get the sample library onto the device</h2>
+        <section class="review-videos" aria-label="Screen recordings">
+          <h2>1. Importing new books</h2>
+          <p>The Mac scanner opens the Apple Books database on the Mac, looks up each
+          book's page count on Open Library, and publishes the shelf to the user's own
+          iCloud container.</p>
+          <video controls playsinline preload="metadata" src="/assets/video/scanner.mp4"></video>
+          <p>The iPhone app then reads that shelf from iCloud and replaces the demo
+          books with the user's own. Every spine is sized from the book's real page
+          count, so a novella and a thousand-page biography look as different on the
+          shelf as they do in print.</p>
+          <video controls playsinline preload="metadata" src="/assets/video/importing.mp4"></video>
+
+          <h2>2. Adding widgets and changing themes</h2>
+          <p>Each Home Screen widget draws its own rotating selection and can be given
+          its own theme and layout from inside the app.</p>
+          <video controls playsinline preload="metadata" src="/assets/video/widgets-and-themes.mp4"></video>
+        </section>
+
+        <h2>Reproducing it on the review device</h2>
+        <p>No Mac or Calibre server needed — a sample library does the same job.</p>
+
+        <h3>Get the sample library onto the device</h3>
         <p>Open this page in Safari on the review device and tap:</p>
         <a class="review-button" href="/review/sample-library.json" download="WoodWork-sample-library.json">Download sample library (48 books)</a>
         <p>Safari saves it to Files &rarr; Downloads.</p>
 
-        <h2>2. Import it</h2>
+        <h3>Import it</h3>
         <ol>
           <li>Open WoodWork and tap <strong>Import a Library File&hellip;</strong></li>
           <li>Choose <strong>WoodWork-sample-library.json</strong> from Downloads.</li>
           <li>The shelf replaces the public domain demo with the imported library.</li>
         </ol>
 
-        <h2>3. What to look for</h2>
+        <h3>What to look for</h3>
         <ol>
           <li><strong>Spine width follows page count.</strong> <em>The Metamorphosis</em>
           (96 pages) is a sliver; <em>The Power Broker</em> (1,246 pages) is the widest
