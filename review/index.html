@@ -1,0 +1,101 @@
+---
+title: WoodWork — Reviewer Guide
+permalink: /review/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>WoodWork — Reviewer Guide</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link href="/assets/css/books-unified.css" rel="stylesheet">
+    <style>
+      .review-page { max-width: 40rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; color: #211a14; }
+      .review-page h1 { margin: 0 0 .4rem; font-size: 1.9rem; line-height: 1.15; }
+      .review-page .review-sub { margin: 0 0 2rem; color: #6f6559; font-size: .9rem; }
+      .review-page h2 { margin: 2.2rem 0 .6rem; font-size: 1.05rem; }
+      .review-page p, .review-page li { color: #3f382f; font-size: .95rem; line-height: 1.6; }
+      .review-page ol { padding-left: 1.3rem; }
+      .review-page li { margin-bottom: .55rem; }
+      .review-button {
+        display: inline-block;
+        margin: .4rem 0 1rem;
+        padding: .75rem 1.3rem;
+        border-radius: 10px;
+        background: #211a14;
+        color: #f7f1e6;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .review-note { padding: .9rem 1.1rem; border-radius: 10px; background: #f3ede2; font-size: .9rem !important; }
+    </style>
+  </head>
+  <body class="books-page">
+    <div class="books-page">
+      <header class="books-masthead">
+        <div class="books-masthead-inner">
+          <a class="books-site-title" href="/">WoodWork</a>
+        </div>
+      </header>
+
+      <main class="review-page">
+        <h1>Reviewer guide</h1>
+        <p class="review-sub">WoodWork Bookshelf 1.0 &middot; how to see the app's own-library features without a Mac or a Calibre server</p>
+
+        <p>On a fresh install WoodWork shows a public domain shelf so the widget is
+        never empty. The app's actual purpose is to show <em>the user's own</em>
+        library. This page provides a sample library so that flow can be reviewed
+        on an iPhone alone.</p>
+
+        <h2>1. Get the sample library onto the device</h2>
+        <p>Open this page in Safari on the review device and tap:</p>
+        <a class="review-button" href="/review/sample-library.json" download="WoodWork-sample-library.json">Download sample library (48 books)</a>
+        <p>Safari saves it to Files &rarr; Downloads.</p>
+
+        <h2>2. Import it</h2>
+        <ol>
+          <li>Open WoodWork and tap <strong>Import a Library File&hellip;</strong></li>
+          <li>Choose <strong>WoodWork-sample-library.json</strong> from Downloads.</li>
+          <li>The shelf replaces the public domain demo with the imported library.</li>
+        </ol>
+
+        <h2>3. What to look for</h2>
+        <ol>
+          <li><strong>Spine width follows page count.</strong> <em>The Metamorphosis</em>
+          (96 pages) is a sliver; <em>The Power Broker</em> (1,246 pages) is the widest
+          book on the shelf. Widths come from the page counts in the library file, not
+          from a fixed set of spine graphics.</li>
+          <li><strong>Independent widgets.</strong> Add two or three WoodWork widgets to
+          the Home Screen. Each draws a different rotating selection and can be given
+          its own theme and layout from the app.</li>
+          <li><strong>On Your Shelf.</strong> The app lists exactly which books each
+          widget is currently showing. For libraries that came from the Mac scanner or
+          Calibre, tapping a book opens it in Apple Books, Kindle, or Calibre; the
+          sample file has no reader links, so its rows are informational only.</li>
+          <li><strong>Demo toggle.</strong> Switching <em>Demo books</em> back on
+          restores the public domain shelf; off returns to the imported library.</li>
+        </ol>
+
+        <h2>How real users get their library in</h2>
+        <p>Two paths, neither of which involves a server of ours:</p>
+        <ol>
+          <li><strong>Mac scanner</strong> (free download on the <a href="/ios/">iOS page</a>):
+          reads the Apple Books and Kindle databases on the user's Mac, looks up page
+          counts on Open Library, and publishes the shelf to the user's own iCloud
+          container, where the iPhone app picks it up.</li>
+          <li><strong>Calibre Content Server</strong>: the app connects directly to the
+          user's Calibre server on their local network and reads the library from it.
+          See the <a href="/calibre/">Calibre page</a>.</li>
+        </ol>
+
+        <p class="review-note">WoodWork is a single independently written Swift and
+        SwiftUI codebase with no template, no third-party UI kit, no accounts, no
+        analytics, and no network calls from the iPhone app except to a Calibre server
+        the user enters themselves. Privacy policy: <a href="/privacy/">getwoodwork.app/privacy</a>.</p>
+      </main>
+    </div>
+  </body>
+</html>

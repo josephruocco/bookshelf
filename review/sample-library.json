@@ -1,0 +1,338 @@
+[
+ {
+  "id": "Sapiens|Yuval Noah Harari",
+  "title": "Sapiens",
+  "author": "Yuval Noah Harari",
+  "pages": 443,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Dune|Frank Herbert",
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "pages": 688,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Name of the Wind|Patrick Rothfuss",
+  "title": "The Name of the Wind",
+  "author": "Patrick Rothfuss",
+  "pages": 662,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Educated|Tara Westover",
+  "title": "Educated",
+  "author": "Tara Westover",
+  "pages": 334,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Atomic Habits|James Clear",
+  "title": "Atomic Habits",
+  "author": "James Clear",
+  "pages": 320,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Project Hail Mary|Andy Weir",
+  "title": "Project Hail Mary",
+  "author": "Andy Weir",
+  "pages": 476,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Overstory|Richard Powers",
+  "title": "The Overstory",
+  "author": "Richard Powers",
+  "pages": 502,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Thinking, Fast and Slow|Daniel Kahneman",
+  "title": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "pages": 499,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Klara and the Sun|Kazuo Ishiguro",
+  "title": "Klara and the Sun",
+  "author": "Kazuo Ishiguro",
+  "pages": 303,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Three-Body Problem|Liu Cixin",
+  "title": "The Three-Body Problem",
+  "author": "Liu Cixin",
+  "pages": 400,
+  "pagesEstimated": false
+ },
+ {
+  "id": "A Little Life|Hanya Yanagihara",
+  "title": "A Little Life",
+  "author": "Hanya Yanagihara",
+  "pages": 720,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Martian|Andy Weir",
+  "title": "The Martian",
+  "author": "Andy Weir",
+  "pages": 369,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Circe|Madeline Miller",
+  "title": "Circe",
+  "author": "Madeline Miller",
+  "pages": 393,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Infinite Jest|David Foster Wallace",
+  "title": "Infinite Jest",
+  "author": "David Foster Wallace",
+  "pages": 1079,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Body Keeps the Score|Bessel van der Kolk",
+  "title": "The Body Keeps the Score",
+  "author": "Bessel van der Kolk",
+  "pages": 464,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Piranesi|Susanna Clarke",
+  "title": "Piranesi",
+  "author": "Susanna Clarke",
+  "pages": 245,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Zero to One|Peter Thiel",
+  "title": "Zero to One",
+  "author": "Peter Thiel",
+  "pages": 224,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Road|Cormac McCarthy",
+  "title": "The Road",
+  "author": "Cormac McCarthy",
+  "pages": 287,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Antifragile|Nassim Nicholas Taleb",
+  "title": "Antifragile",
+  "author": "Nassim Nicholas Taleb",
+  "pages": 519,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Normal People|Sally Rooney",
+  "title": "Normal People",
+  "author": "Sally Rooney",
+  "pages": 273,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Shining|Stephen King",
+  "title": "The Shining",
+  "author": "Stephen King",
+  "pages": 447,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Neuromancer|William Gibson",
+  "title": "Neuromancer",
+  "author": "William Gibson",
+  "pages": 271,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Bad Blood|John Carreyrou",
+  "title": "Bad Blood",
+  "author": "John Carreyrou",
+  "pages": 339,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Beloved|Toni Morrison",
+  "title": "Beloved",
+  "author": "Toni Morrison",
+  "pages": 324,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Left Hand of Darkness|Ursula K. Le Guin",
+  "title": "The Left Hand of Darkness",
+  "author": "Ursula K. Le Guin",
+  "pages": 304,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Tomorrow, and Tomorrow, and Tomorrow|Gabrielle Zevin",
+  "title": "Tomorrow, and Tomorrow, and Tomorrow",
+  "author": "Gabrielle Zevin",
+  "pages": 401,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Meditations|Marcus Aurelius",
+  "title": "Meditations",
+  "author": "Marcus Aurelius",
+  "pages": 254,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Goldfinch|Donna Tartt",
+  "title": "The Goldfinch",
+  "author": "Donna Tartt",
+  "pages": 771,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Station Eleven|Emily St. John Mandel",
+  "title": "Station Eleven",
+  "author": "Emily St. John Mandel",
+  "pages": 333,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Old Man and the Sea|Ernest Hemingway",
+  "title": "The Old Man and the Sea",
+  "author": "Ernest Hemingway",
+  "pages": 127,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Never Let Me Go|Kazuo Ishiguro",
+  "title": "Never Let Me Go",
+  "author": "Kazuo Ishiguro",
+  "pages": 288,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Power Broker|Robert Caro",
+  "title": "The Power Broker",
+  "author": "Robert Caro",
+  "pages": 1246,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Norwegian Wood|Haruki Murakami",
+  "title": "Norwegian Wood",
+  "author": "Haruki Murakami",
+  "pages": 296,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Deep Work|Cal Newport",
+  "title": "Deep Work",
+  "author": "Cal Newport",
+  "pages": 296,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Hobbit|J.R.R. Tolkien",
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "pages": 310,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Pachinko|Min Jin Lee",
+  "title": "Pachinko",
+  "author": "Min Jin Lee",
+  "pages": 490,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Stranger|Albert Camus",
+  "title": "The Stranger",
+  "author": "Albert Camus",
+  "pages": 123,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Cloud Atlas|David Mitchell",
+  "title": "Cloud Atlas",
+  "author": "David Mitchell",
+  "pages": 509,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Small Things Like These|Claire Keegan",
+  "title": "Small Things Like These",
+  "author": "Claire Keegan",
+  "pages": 116,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Shoe Dog|Phil Knight",
+  "title": "Shoe Dog",
+  "author": "Phil Knight",
+  "pages": 386,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Wolf Hall|Hilary Mantel",
+  "title": "Wolf Hall",
+  "author": "Hilary Mantel",
+  "pages": 604,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Metamorphosis|Franz Kafka",
+  "title": "The Metamorphosis",
+  "author": "Franz Kafka",
+  "pages": 96,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Lonesome Dove|Larry McMurtry",
+  "title": "Lonesome Dove",
+  "author": "Larry McMurtry",
+  "pages": 858,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Why We Sleep|Matthew Walker",
+  "title": "Why We Sleep",
+  "author": "Matthew Walker",
+  "pages": 368,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Hyperion|Dan Simmons",
+  "title": "Hyperion",
+  "author": "Dan Simmons",
+  "pages": 482,
+  "pagesEstimated": false
+ },
+ {
+  "id": "Braiding Sweetgrass|Robin Wall Kimmerer",
+  "title": "Braiding Sweetgrass",
+  "author": "Robin Wall Kimmerer",
+  "pages": 390,
+  "pagesEstimated": false
+ },
+ {
+  "id": "The Remains of the Day|Kazuo Ishiguro",
+  "title": "The Remains of the Day",
+  "author": "Kazuo Ishiguro",
+  "pages": 258,
+  "pagesEstimated": false
+ },
+ {
+  "id": "East of Eden|John Steinbeck",
+  "title": "East of Eden",
+  "author": "John Steinbeck",
+  "pages": 601,
+  "pagesEstimated": false
+ }
+]
