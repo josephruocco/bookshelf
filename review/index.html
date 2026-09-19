@@ -19,6 +19,7 @@ sitemap: false
       .review-page h2 { margin: 2.6rem 0 .6rem; font-size: 1.15rem; }
       .review-page h3 { margin: 1.6rem 0 .4rem; font-size: .95rem; }
       .review-videos video { display: block; width: 100%; margin: .6rem 0 1.4rem; border-radius: 10px; background: #211a14; }
+      .review-videos video.portrait { width: min(100%, 320px); }
       .review-page p, .review-page li { color: #3f382f; font-size: .95rem; line-height: 1.6; }
       .review-page ol { padding-left: 1.3rem; }
       .review-page li { margin-bottom: .55rem; }
@@ -68,6 +69,15 @@ sitemap: false
           <p>Each Home Screen widget draws its own rotating selection and can be given
           its own theme and layout from inside the app.</p>
           <video controls playsinline preload="metadata" src="/assets/video/widgets-and-themes.mp4"></video>
+
+          <h2>3. Syncing from Calibre</h2>
+          <p>For users who manage their library in Calibre, the iPhone app connects
+          directly to their Calibre Content Server on the local network. Nothing passes
+          through a server of ours. First, the server being started on the Mac:</p>
+          <video controls playsinline preload="metadata" src="/assets/video/calibre-server.mp4"></video>
+          <p>Then the iPhone entering that address, choosing the library, and building
+          the shelf from it:</p>
+          <video class="portrait" controls playsinline preload="metadata" src="/assets/video/calibre-iphone.mp4"></video>
         </section>
 
         <h2>Reproducing it on the review device</h2>
