@@ -1,0 +1,105 @@
+---
+title: How WoodWork Works
+permalink: /guide/
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to get your own books onto your WoodWork shelf, add widgets, and connect a Calibre server.">
+    <title>How WoodWork Works</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link href="/assets/css/books-unified.css" rel="stylesheet">
+    <style>
+      .guide-page { max-width: 40rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; color: #211a14; }
+      .guide-page h1 { margin: 0 0 .4rem; font-size: 1.9rem; line-height: 1.15; }
+      .guide-page .guide-sub { margin: 0 0 2.5rem; color: #6f6559; font-size: .95rem; line-height: 1.5; }
+      .guide-page h2 { margin: 3rem 0 .6rem; font-size: 1.15rem; }
+      .guide-page p { color: #3f382f; font-size: .95rem; line-height: 1.6; }
+      .guide-page ol { padding-left: 1.3rem; }
+      .guide-page li { margin-bottom: .55rem; color: #3f382f; font-size: .95rem; line-height: 1.6; }
+      .guide-page video {
+        display: block;
+        width: 100%;
+        margin: 1rem 0 1.4rem;
+        border-radius: 10px;
+        background: #211a14;
+      }
+      .guide-page video.portrait { width: min(100%, 320px); }
+      .guide-button {
+        display: inline-block;
+        margin: .6rem 0 1rem;
+        padding: .75rem 1.3rem;
+        border-radius: 10px;
+        background: #211a14;
+        color: #f7f1e6;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .guide-note { padding: .9rem 1.1rem; border-radius: 10px; background: #f3ede2; font-size: .9rem !important; }
+      .guide-footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid rgba(33, 26, 20, .1); }
+      .guide-footer a { color: #8d8172; font-size: .8rem; text-decoration: none; }
+      .guide-footer a:hover { color: #211a14; }
+    </style>
+  </head>
+  <body class="books-page">
+    <div class="books-page">
+      <header class="books-masthead">
+        <div class="books-masthead-inner">
+          <a class="books-site-title" href="/">WoodWork</a>
+          <nav class="books-nav" aria-label="Primary">
+            <a href="/ios/">iOS</a>
+            <a href="/calibre/">Calibre</a>
+            <a href="/guide/" class="active">Guide</a>
+            <a href="/support/">Support</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="guide-page">
+        <h1>How WoodWork works</h1>
+        <p class="guide-sub">WoodWork opens on a shelf of public domain classics so it is never
+        empty. Here is how to put your own books there instead.</p>
+
+        <h2>Bringing in your own library</h2>
+        <p>Your Apple Books and Kindle libraries live in databases that only your Mac can read,
+        so a small companion app does the reading. It finds your books, looks up how many pages
+        each one has, and sends the result to your own iCloud account.</p>
+        <video controls playsinline preload="metadata" src="/assets/video/scanner.mp4"></video>
+        <a class="guide-button" href="/assets/downloads/WoodWorkScanner.dmg" download>Download the Mac scanner</a>
+        <p>Your iPhone picks the shelf up from iCloud on its own. The public domain books step
+        aside and your library takes over. Each spine is as thick as the book is long, so a
+        novella sits as a sliver next to something enormous.</p>
+        <video controls playsinline preload="metadata" src="/assets/video/importing.mp4"></video>
+
+        <h2>Adding widgets and changing the look</h2>
+        <p>Run as many shelves as you like. Every widget draws its own selection and keeps its
+        own style, so Dark Oak can sit above White Built-In on the same screen.</p>
+        <video controls playsinline preload="metadata" src="/assets/video/widgets-and-themes.mp4"></video>
+        <p>To add one: touch and hold an empty spot on your Home Screen, tap the plus in the
+        corner, search for WoodWork, then pick a size. Tapping a widget opens the app on that
+        shelf, where you can change its style and see which books it is showing right now.</p>
+
+        <h2>Using Calibre instead</h2>
+        <p>If you keep your library in Calibre, skip the Mac app. WoodWork talks to your Calibre
+        Content Server directly over your own network. Start the server from Calibre:</p>
+        <video controls playsinline preload="metadata" src="/assets/video/calibre-server.mp4"></video>
+        <p>Then enter that address on your iPhone, choose a library, and the shelf fills in.</p>
+        <video class="portrait" controls playsinline preload="metadata" src="/assets/video/calibre-iphone.mp4"></video>
+        <p>There is also a Calibre plugin if you would rather push your library across from the
+        desktop. <a href="/calibre/">More on the Calibre page</a>.</p>
+
+        <h2>Where your books go</h2>
+        <p class="guide-note">Nowhere except your own devices. WoodWork has no accounts and no
+        server of ours anywhere in the path. The Mac app asks Open Library for page counts and
+        writes your shelf to your own iCloud; the Calibre connection never leaves your network.
+        <a href="/privacy/">Full privacy policy</a>.</p>
+
+        <footer class="guide-footer">
+          <a href="/privacy/">Privacy</a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
